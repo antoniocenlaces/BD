@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A55D6879-C54B-34D1-F353-D1640D10C91E" name="GOLES_POR_JORNADA">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 18:47:30 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>G_P_J</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TEMPORADA" id="9F9D2FC7-2C2B-C10E-0EF4-87C8B2FB884E">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 18:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica el momento temporal en que se juega este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JORNADA" id="7A387DBA-8885-0846-6BDB-8C15CAF42213">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 18:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica el intervalo temporal, dentro de esta temporada, en el que se ha disputado este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GOLES_JORNADA" id="27BCA459-01B2-365E-9951-7DDB3A91FF0F">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 18:50:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total de goles que este equipo ha marcado en esta temporada y división.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE5BCE37-3C54-285D-5ED9-5628FEA0F6E9" name="GOLES_POR_JORNADA_PK">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 18:50:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F9D2FC7-2C2B-C10E-0EF4-87C8B2FB884E"/>
+<colUsage columnID="7A387DBA-8885-0846-6BDB-8C15CAF42213"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7F034CE-5241-F980-CAAD-9F8E222B86ED" name="PARTICIPAR">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:48:39 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>PAR</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBRA" id="8A477906-001A-9325-139E-34D91F949FCB">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:50:43 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89D166B3-6ED0-2B3B-1E2A-18737D3D5D4C" referredColumn="991B1D08-F0CC-F3E3-24DF-8AD786EF128B"/>
+</associations>
+</Column>
+<Column name="PERSONA" id="93FD8F0B-7CAB-8C4A-AFC9-F64F9513A354">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:51:56 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCB079F7-D610-FCEB-1259-A6F90625D83D" referredColumn="D1341177-5863-8920-60A1-70B0CEEBA290"/>
+</associations>
+</Column>
+<Column name="FUNCION" id="27E106A2-D584-DC33-082E-875B01AF923A">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:52:40 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAPEL" id="6602AC1C-58DE-8561-AA0E-106910E8CFA2">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:56:46 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(PAPEL IS NOT NULL AND (FUNCION=&apos;actor&apos; OR FUNCION=&apos;actress&apos;)) OR (PAPEL IS  NULL AND (FUNCION&lt;&gt;&apos;actor&apos; AND FUNCION&lt;&gt;&apos;actress&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="CEAA22E0-9650-E216-5AF8-C4EF44272B97">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:58:33 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F75BD0CC-D395-5CE0-5C58-6F083ABAF264" name="PARTICIPAR_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:02:41 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A477906-001A-9325-139E-34D91F949FCB"/>
+<colUsage columnID="93FD8F0B-7CAB-8C4A-AFC9-F64F9513A354"/>
+<colUsage columnID="27E106A2-D584-DC33-082E-875B01AF923A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="551FBEA5-8BAA-BD9A-D7D9-A61FEDDD8173" name="PARTICIPAR_OBRA_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:05:27 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A477906-001A-9325-139E-34D91F949FCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59BD5D18-FCE5-6EB4-EED6-CF5FAE72368A" name="PARTICIPAR_PERSONA_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:05:27 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93FD8F0B-7CAB-8C4A-AFC9-F64F9513A354"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

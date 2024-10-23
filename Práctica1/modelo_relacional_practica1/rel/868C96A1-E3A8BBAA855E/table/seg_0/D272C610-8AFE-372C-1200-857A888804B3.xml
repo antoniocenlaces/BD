@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D272C610-8AFE-372C-1200-857A888804B3" name="PUNTOS_GOLES">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:31:35 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>P_G</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TEMPORADA" id="E0F770BD-562D-9986-05A0-CAD7F0815BBF">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:20 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83408AFA-1F59-3F02-173A-569F7DB107D2" referredColumn="B78A1DCC-C111-473D-B864-C29FE2E67C95"/>
+</associations>
+</Column>
+<Column name="DIVISION" id="F69C3244-7D03-C179-837B-E7DD8C6E39BE">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:20 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83408AFA-1F59-3F02-173A-569F7DB107D2" referredColumn="617BFD7C-8C64-85EC-62EE-9DE436901746"/>
+</associations>
+</Column>
+<Column name="MAX_PUNTOS" id="F781AC71-19BC-241D-A588-6610C9DED3F6">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Puntos totales que este equipo ha conseguido en esta temporada y división. Un partido empatado da un punto para cada equipo, un equipo que gana un partido consigue tres puntos, quien pierde cero puntos.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_GOLES" id="503AD9A1-E190-E9B9-3339-F1030C2C17E3">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total de goles que este equipo ha marcado en esta temporada y división.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2AE8B9E2-9906-396C-C0D4-A0449781834D" name="PUNTOS_GOLES_PK">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:20 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0F770BD-562D-9986-05A0-CAD7F0815BBF"/>
+<colUsage columnID="F69C3244-7D03-C179-837B-E7DD8C6E39BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08770BC3-CDD1-1164-9DB3-1FD102F9F7B7" name="PUNTOS_GOLES_TEMPORADA_DIVISION_FK">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0F770BD-562D-9986-05A0-CAD7F0815BBF"/>
+<colUsage columnID="F69C3244-7D03-C179-837B-E7DD8C6E39BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

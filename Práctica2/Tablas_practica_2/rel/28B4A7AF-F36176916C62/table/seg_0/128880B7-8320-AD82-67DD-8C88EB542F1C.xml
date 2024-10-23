@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="128880B7-8320-AD82-67DD-8C88EB542F1C" name="PERSONA">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:39:00 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>PER</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERSONA" id="D1341177-5863-8920-60A1-70B0CEEBA290">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:43:27 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="2B86647E-92B1-2317-2A67-221CE9572814">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:43:27 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NACIMIENTO" id="5BCC6F31-84C2-4B74-BB7D-1DF13827D380">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:43:59 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO" id="B35CD905-8879-71F3-AA01-14E9AD29BB55">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:45:13 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<constraintName>GENERO_CHK</constraintName>
+<constraintNotes><![CDATA[Comprueba valor de GENERO en tabla PERSONA. Valores 'f': Femenino, 'm': Masculino.]]></constraintNotes>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="f" description="FEMENINO"/>
+<valueDef value="m" description="MASCULINO"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F1E1FA6-0C0A-B3AB-AA1A-BFA9AD843C4C" name="PERSONA_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:43:27 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1341177-5863-8920-60A1-70B0CEEBA290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

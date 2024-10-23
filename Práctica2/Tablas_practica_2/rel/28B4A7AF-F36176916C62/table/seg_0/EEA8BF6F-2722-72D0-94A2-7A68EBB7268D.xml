@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EEA8BF6F-2722-72D0-94A2-7A68EBB7268D" name="VINCULAR">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:24:31 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<abbreviation>VINC</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBRA_1" id="4BE91CAA-3879-0291-ABDD-38437E9E6535">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:27:48 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<constraintName>PARTICIPAR_CHK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="OBRA_1 &lt;&gt; OBRA_2"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7964E383-9E1A-87F5-EC86-5242850AA040" referredColumn="991B1D08-F0CC-F3E3-24DF-8AD786EF128B"/>
+</associations>
+</Column>
+<Column name="OBRA_2" id="53B626ED-2512-3577-0AFA-47C663373126">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:28:24 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CC5A968-EB36-B539-2065-2DB60832A18D" referredColumn="991B1D08-F0CC-F3E3-24DF-8AD786EF128B"/>
+</associations>
+</Column>
+<Column name="VINCULO" id="9A44DA78-82AF-BE4A-5776-826E17F40A2D">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:29:21 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<constraintName>VINCULO_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<listOfValues>
+<valueDef value="precuela" description=""/>
+<valueDef value="remake" description=""/>
+<valueDef value="secuela" description=""/>
+</listOfValues>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A4F69C6A-D051-C868-4912-94AF9EACD02E" name="VINCULAR_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:29:34 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BE91CAA-3879-0291-ABDD-38437E9E6535"/>
+<colUsage columnID="53B626ED-2512-3577-0AFA-47C663373126"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F97135FC-3957-8FB0-B7D8-8A232ACE2285" name="VINCULAR_OBRA_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:30:35 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BE91CAA-3879-0291-ABDD-38437E9E6535"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D54CBDA-FC3B-A7D3-0BBA-01107C97BE54" name="VINCULAR_OBRA_FKv1">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:30:35 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53B626ED-2512-3577-0AFA-47C663373126"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

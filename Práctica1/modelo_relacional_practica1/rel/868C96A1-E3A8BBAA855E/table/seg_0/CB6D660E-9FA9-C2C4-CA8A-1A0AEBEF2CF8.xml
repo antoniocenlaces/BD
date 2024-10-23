@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB6D660E-9FA9-C2C4-CA8A-1A0AEBEF2CF8" name="TEMPORADA_DIVISION">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:11:44 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>TEM_DIV</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TEMPORADA" id="B78A1DCC-C111-473D-B864-C29FE2E67C95">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:30:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica el momento temporal en que se juega un partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIVISION" id="617BFD7C-8C64-85EC-62EE-9DE436901746">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:14:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Denominación oficial de la competición en la que se juega un partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_JORNADAS" id="673890CF-DC2C-FBFA-CEA0-5BB42746609D">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:33:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de jornadas totales en las que se han disputado partidos en esta temporada y división.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PARTIDOS" id="B9DF1D85-A7AA-C8C1-A0CA-C6B4E42F1267">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:33:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de partidos totales disputados en esta temporada y división.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DD61C93-49D2-FC86-942A-99EBC6A11B25" name="DIVISION_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:13:21 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B78A1DCC-C111-473D-B864-C29FE2E67C95"/>
+<colUsage columnID="617BFD7C-8C64-85EC-62EE-9DE436901746"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

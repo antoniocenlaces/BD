@@ -1,0 +1,25 @@
+Cara tupla del fichero .csv hace referencia a la información de un partido
+El significado de cada columna de los datos es el siguiente:
+
+INICIO_TEMPORADA : Año de inicio de la temporada en la que se juega el partido.
+FIN_TEMPORADA : Año de fin de la temporada en la que se juega el partido.
+DIVISIÓN : División en la que se juega el partido.
+JORNADA : Jornada en la que se juega el partido.
+EQUIPO_LOCAL : Nombre corto del equipo local que juega el partido.
+EQUIPO_VISITANTE : Nombre corto del equipo visitante que juega el partido.
+GOLES_LOCAL : Goles marcados por el equipo local que juega el partido.
+GOLES_VISITANTE : Goles marcados por el equipo visitante que juega el partido.
+Club : Nombre oficial del equipo local que juega el partido.
+Ciudad : Ciudad del equipo local que juega el partido. 
+Fundación : Año de fundación del equipo local que juega el partido.
+Fund._legal : Año legal de fundación del equipo local que juega el partido.
+Nombre : Nombre histórico del equipo local que juega el partido.
+Estadio : Estadio en el que juega el equipo local que juega el partido.
+Fecha_Inag : Fecha de inauguración del estadio en el que juega el equipo local que juega el partido.
+Aforo : Aforo del estadio en el que juega el equipo local que juega el partido.
+Equipo : Otro nombre del equipo local que juega el partido.
+
+
+INICIO_TEMPORADA, FIN_TEMPORADA, DIVISION, JORNADA, EQUIPO_LOCAL, 
+EQUIPO_VISITANTE, GOLES_LOCAL, GOLES_VISITANTE, CLUB, CIUDAD, FUNDACION,    
+FUND_LEGAL, NOMBRE, ESTADIO, FECHA_INAG, AFORO, EQUIPO

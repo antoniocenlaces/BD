@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="7648B2A9-F16D-4CF1-AFC3-7CF88200E03E">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:36:15 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

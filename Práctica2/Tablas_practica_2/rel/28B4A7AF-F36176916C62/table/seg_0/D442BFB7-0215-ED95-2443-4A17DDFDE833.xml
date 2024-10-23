@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D442BFB7-0215-ED95-2443-4A17DDFDE833" name="CAPITULO">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:15:14 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>CAP</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CAP" id="D59E097F-0183-FFA1-7D41-FEF450F6A036">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:17:24 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="N_CAP" id="C57F8805-CCF0-FD52-C12D-4B240A084BC0">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:19:05 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO_CAP" id="BCFE9217-E03C-8A07-44C6-35BABC637069">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:19:48 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPORADA" id="6CB1866F-7716-E846-1C96-B9661A42FCA6">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:21:41 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MI_SERIE" id="2892963D-6830-79CB-519E-6774F49E615F">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:22:22 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEE3EA5E-CBFC-C80E-ED65-A7BC7F29BCA1" referredColumn="991B1D08-F0CC-F3E3-24DF-8AD786EF128B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0408473-FA07-517B-6450-5D6CDF75C93E" name="CAPITULO_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:17:24 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D59E097F-0183-FFA1-7D41-FEF450F6A036"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D154EA4A-7E75-5DA5-92E9-7E5AA5FB6E6B" name="CAPITULO_OBRA_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:23:24 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2892963D-6830-79CB-519E-6774F49E615F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

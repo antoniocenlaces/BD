@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="DF8BA487-3914-BB6A-C08F-6CC45D49DB16">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:36:15 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

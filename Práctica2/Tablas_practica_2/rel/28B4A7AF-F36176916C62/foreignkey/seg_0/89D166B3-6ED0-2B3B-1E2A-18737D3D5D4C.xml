@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="89D166B3-6ED0-2B3B-1E2A-18737D3D5D4C" containerWithKeyObject="B7F034CE-5241-F980-CAAD-9F8E222B86ED" localFKIndex="551FBEA5-8BAA-BD9A-D7D9-A61FEDDD8173" name="PARTICIPAR_OBRA_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 17:05:27 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<referredTableLongName>OBRA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3B541EFE-053B-6E45-BF85-AAC3D5034ED0</referredTableID>
+<keyObject>3F22A0A4-E9BF-036A-70ED-1B0443E4EDFA</keyObject>
+<referredKeyID>3F22A0A4-E9BF-036A-70ED-1B0443E4EDFA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_OBRA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

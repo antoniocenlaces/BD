@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83408AFA-1F59-3F02-173A-569F7DB107D2" containerWithKeyObject="D272C610-8AFE-372C-1200-857A888804B3" localFKIndex="08770BC3-CDD1-1164-9DB3-1FD102F9F7B7" name="PUNTOS_GOLES_TEMPORADA_DIVISION_FK">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-06 17:34:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<referredTableLongName>TEMPORADA_DIVISION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB6D660E-9FA9-C2C4-CA8A-1A0AEBEF2CF8</referredTableID>
+<keyObject>0DD61C93-49D2-FC86-942A-99EBC6A11B25</keyObject>
+<referredKeyID>0DD61C93-49D2-FC86-942A-99EBC6A11B25</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TEMPORADA,DIVISION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

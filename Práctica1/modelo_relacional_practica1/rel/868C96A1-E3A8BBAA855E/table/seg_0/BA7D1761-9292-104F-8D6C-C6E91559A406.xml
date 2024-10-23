@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA7D1761-9292-104F-8D6C-C6E91559A406" name="ESTADIO">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:46:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<abbreviation>EST</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOMBRE" id="F0A247E4-67B6-3C08-D90C-3B61D345B47E">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:48:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre completo del estadio donde pueden disputarse partidos de fútbol.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INAUGURACION" id="134C0532-AFD3-A91C-2EAD-DD2D317AB8A9">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:52:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Año de inauguración del estadio.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AFORO" id="CDABE592-52BD-E8D7-45EB-D4E69F4BCC75">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:52:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Aforo del estadio.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE13DB27-4DB2-9110-7438-337F442592AC" name="ESTADIOS_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 20:47:40 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0A247E4-67B6-3C08-D90C-3B61D345B47E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

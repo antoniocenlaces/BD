@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A44D56BC-385D-C291-296D-BEC4BEF62DD2" name="EQUIPO">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:23:19 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<abbreviation>EQUI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOMBRE_OFICIAL" id="A9E0C32C-ABE7-8D2C-9238-EA528045EC00">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:25:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre oficial del equipo que puede participar en un partido de fútbol.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_CORTO" id="4706947A-EB70-B6FA-D67E-257184653EE7">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:27:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre corto del equipo.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_HISTORICO" id="F8C2F176-79A9-F714-E62D-86AC02C662BC">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:27:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre histórico del equipo.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_NOMBRES" id="BEE603C2-9150-4822-87D3-A3E557A0635E">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:25:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Otro nombre del equipo.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FUNDACION" id="7D370172-AA75-9522-8E2C-9DA0C44481B7">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:25:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Año de fundación del equipo.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="6E2F68C9-BDD1-0FFF-2B8C-7B8F5ADBF4D4">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-01 09:34:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ciudad donde reside este Equipo]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MI_ESTADIO" id="FB482755-05E5-104A-246C-035DC2A4F2A5">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:27:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referencia al estadio donde este equipo juega partidos como local.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<dependOnForeignKeyID>3DC188AB-6B89-EBFE-B5DF-C6A60CC703BC</dependOnForeignKeyID>
+<associations>
+<colAssociation fkAssociation="3DC188AB-6B89-EBFE-B5DF-C6A60CC703BC" referredColumn="F0A247E4-67B6-3C08-D90C-3B61D345B47E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98762227-A15C-DD0D-012B-D2CC35FFD082" name="EQUIPOS_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 21:25:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9E0C32C-ABE7-8D2C-9238-EA528045EC00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E85FFBE7-71D6-64F1-D9B0-8EFC0C26E71E" name="EQUIPOS_ESTADIOS_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:49:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB482755-05E5-104A-246C-035DC2A4F2A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

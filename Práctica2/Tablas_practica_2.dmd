@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Tablas_practica_2" id="CDA29B8F-22BB-72E0-AF29-B03BA63FA54F" version="3.5">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:04:12 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CDA29B8F-22BB-72E0-AF29-B03BA63FA54F</designId>
+</OSDM_Design>

@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E2810DE-1B52-E2C8-CF72-492299A34717" name="PARTIDO">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:06:51 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<abbreviation>PART</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPARTIDO" id="CD8BE088-35FC-4820-E032-DD05C3AD9541">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:10:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número único utilizado para identificar este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPORADA" id="D9ADAE67-48AE-1F95-4297-6029E9812806">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:10:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica el momento temporal en que se juega este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2ECB6D42-A8F8-472A-FA50-DE8A0F8B9223" referredColumn="B78A1DCC-C111-473D-B864-C29FE2E67C95"/>
+</associations>
+</Column>
+<Column name="DIVISION" id="41190F04-8B67-3552-8A4A-B6E896573B57">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:10:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Denominación oficial de la competición en la que se juega este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2ECB6D42-A8F8-472A-FA50-DE8A0F8B9223" referredColumn="617BFD7C-8C64-85EC-62EE-9DE436901746"/>
+</associations>
+</Column>
+<Column name="JORNADA" id="89BD9BAB-CE7D-89F1-B091-57CD6B4432FF">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:12:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica el intervalo temporal, dentro de esta temporada, en el que se ha disputado este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EQUIPO_LOCAL" id="778660BD-802C-B9BF-9C61-606D89F48254">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:12:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referencia al equipo local que ha disputado este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83F70FF6-0974-455E-A064-03B4A57DD41F" referredColumn="A9E0C32C-ABE7-8D2C-9238-EA528045EC00"/>
+</associations>
+</Column>
+<Column name="EQUIPO_VISITANTE" id="CFD0B858-A240-A63C-5E66-BEB01E871688">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:13:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referencia al equipo visitante que ha disputado este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82276C6D-93AF-5EBA-D7A2-83E5D8CA11E1" referredColumn="A9E0C32C-ABE7-8D2C-9238-EA528045EC00"/>
+</associations>
+</Column>
+<Column name="GOLES_LOCAL" id="5370887B-7B12-2E1C-EA6B-FCFCABB0F8C5">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:13:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de goles que el equipo local ha marcado en este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GOLES_VISITANTE" id="D516FB21-B59F-7474-607F-87C30381A15C">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:14:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de goles que el equipo visitante ha marcado en este partido.]]></commentInRDBMS>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3376DD3-9BF5-0743-1C50-93491F4F83FB" name="PARTIDO_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:10:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD8BE088-35FC-4820-E032-DD05C3AD9541"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCC3DA1F-4DD1-2EE5-5F5A-5B51A7132666" name="PARTIDO_IDX">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:31:45 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9ADAE67-48AE-1F95-4297-6029E9812806"/>
+<colUsage columnID="41190F04-8B67-3552-8A4A-B6E896573B57"/>
+<colUsage columnID="89BD9BAB-CE7D-89F1-B091-57CD6B4432FF"/>
+<colUsage columnID="778660BD-802C-B9BF-9C61-606D89F48254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9842A45D-1759-2860-137B-4B38AFEEE722" name="PARTIDO_IDXv1">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-13 23:32:10 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9ADAE67-48AE-1F95-4297-6029E9812806"/>
+<colUsage columnID="41190F04-8B67-3552-8A4A-B6E896573B57"/>
+<colUsage columnID="89BD9BAB-CE7D-89F1-B091-57CD6B4432FF"/>
+<colUsage columnID="CFD0B858-A240-A63C-5E66-BEB01E871688"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FF2BBC8-16AB-35FF-0567-E4CBEBBCC1FF" name="PARTIDO_EQUIPOS_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:38:42 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="778660BD-802C-B9BF-9C61-606D89F48254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0157FD48-86AD-4D69-75C5-E6D284F00B7D" name="PARTIDO_EQUIPOS_FKv2">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:39:25 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFD0B858-A240-A63C-5E66-BEB01E871688"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E47E1397-8E3E-CA88-DB01-6C0D80B21852" name="PARTIDO_TEMPORADA_DIVISION_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:43:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9ADAE67-48AE-1F95-4297-6029E9812806"/>
+<colUsage columnID="41190F04-8B67-3552-8A4A-B6E896573B57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="PARTIDO_CK_1" directorySegmentName="seg_0" id="2DDF0046-3E1C-AFF3-0971-493A84552FE7">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-01 08:36:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<rule><![CDATA[GOLES_LOCAL>=0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="PARTIDO_CK_2" directorySegmentName="seg_0" id="A5388F07-B1D3-4454-A29A-040CD4C8AF40">
+<createdBy>agaso</createdBy>
+<createdTime>2024-03-01 08:37:32 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<rule><![CDATA[GOLES_VISITANTE>=0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2ECB6D42-A8F8-472A-FA50-DE8A0F8B9223" containerWithKeyObject="8E2810DE-1B52-E2C8-CF72-492299A34717" localFKIndex="E47E1397-8E3E-CA88-DB01-6C0D80B21852" name="PARTIDO_TEMPORADA_DIVISION_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:43:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<referredTableLongName>TEMPORADA_DIVISION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB6D660E-9FA9-C2C4-CA8A-1A0AEBEF2CF8</referredTableID>
+<keyObject>0DD61C93-49D2-FC86-942A-99EBC6A11B25</keyObject>
+<referredKeyID>0DD61C93-49D2-FC86-942A-99EBC6A11B25</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TEMPORADA,DIVISION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,23 @@
+Cara tupla del fichero .csv contiene información relativa a una obra cinematográfica
+El significado de cada columna de los datos es el siguiente:
+
+title : Título de la obra cinematográfica (puede ser película, serie o capítulo).
+production_year : Año de producción de la obra cinematográfica.
+serie_title : Si la obra es un capítulo, título de la serie a la que pertenece el capítulo.
+serie_prod_year : Si la obra es un capítulo, año de producción de la serie a la que pertenece el cepítulo.
+season_nr : Si la obra es un capítulo, número de temporada en la que está enmarcado el capítulo.
+episode_nr : Si la obra es un capítulo, numero de episodio del capítulo.
+series_years : Sí la obra es una serie, periodo de emisión de la serie
+kind : Tipo de obra cinematográfica (película, serie, capítulo).
+titlelink : Título de otra obra cinematográfica con la que la presente obra tiene relación.
+productionyearlink : Año de producción de la obra cinematográfica con la que la presente obra tiene relación.
+link : Tipo de relación entre la presente obra y la obra con la que está relacionada.
+keyword : Palabra clave describiendo la obra.
+name : Nombre de una persona involucrada en la obra cinematográfica.
+gender : Género de la persona involucrada en la obra cinematográfica.
+person_info : Datos adicionales de la persona involucrada en la obra cinematográfica.
+info_context : Información de contexto de los datos adicionales de la persona involucrada en la obra cinematográfica.
+role : Labor de la persona en la obra cinematográfica.
+role_name : En el caso de que la labor de la persona en la obra cinematográfica sea de actor, el nombre del papel que ha realizado.
+note : Información adicional sobre la labor de la persona en la obra cinematográfica.
+nr_order : Orden de importancia de la persona en la obra cinematográfica.

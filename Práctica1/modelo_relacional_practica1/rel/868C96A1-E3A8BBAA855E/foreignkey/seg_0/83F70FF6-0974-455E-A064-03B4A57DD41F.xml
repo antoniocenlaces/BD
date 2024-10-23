@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83F70FF6-0974-455E-A064-03B4A57DD41F" containerWithKeyObject="8E2810DE-1B52-E2C8-CF72-492299A34717" localFKIndex="7FF2BBC8-16AB-35FF-0567-E4CBEBBCC1FF" name="PARTIDO_EQUIPOS_FK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-02-29 23:38:42 UTC</createdTime>
+<ownerDesignName>modelo_relacional_practica1</ownerDesignName>
+<referredTableLongName>EQUIPOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A44D56BC-385D-C291-296D-BEC4BEF62DD2</referredTableID>
+<keyObject>98762227-A15C-DD0D-012B-D2CC35FFD082</keyObject>
+<referredKeyID>98762227-A15C-DD0D-012B-D2CC35FFD082</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NOMBRE_OFICIAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

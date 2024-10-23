@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B541EFE-053B-6E45-BF85-AAC3D5034ED0" name="OBRA">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:05:48 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<abbreviation>OBR</abbreviation>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OBRA" id="991B1D08-F0CC-F3E3-24DF-8AD786EF128B">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:09:42 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO" id="5D7599E9-5EB3-1744-F374-E62CD8E01287">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:09:42 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO" id="7109A857-1380-8ADA-F0B2-2708AD00FF45">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:10:19 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AÑO_ESTRENO" id="0022D165-92DB-7B3D-AEB3-5955B601BA43">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:23:26 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIODO_EMISION" id="0EC33451-9063-B5C8-0807-4CB56034352F">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:32:35 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="B2E03A5D-FC4B-8113-6190-DDD4201A24CC">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:33:38 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<constraintName>TIPO_CHK</constraintName>
+<constraintNotes><![CDATA[Comprueba que el atributo TIPO de la tabla OBRA toma los valores 'S': Serie o 'P': Película]]></constraintNotes>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="P" description="PELÍCULA"/>
+<valueDef value="S" description="SERIE"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F22A0A4-E9BF-036A-70ED-1B0443E4EDFA" name="OBRA_PK">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:09:42 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="991B1D08-F0CC-F3E3-24DF-8AD786EF128B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

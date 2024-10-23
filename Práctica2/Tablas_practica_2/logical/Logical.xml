@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0A961415-972C-409B-0B16-DF8276746DD6" mainViewID="6BD385B9-CFA2-2426-F3B1-237652E658BA">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:04:12 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

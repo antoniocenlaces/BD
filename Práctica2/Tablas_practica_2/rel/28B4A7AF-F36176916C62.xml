@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="28B4A7AF-58ED-D7E2-4ADF-F36176916C62" mainViewID="4A5303C2-BEFC-250B-9376-E8C2A8726CC5">
+<createdBy>Antonio Gonzalez</createdBy>
+<createdTime>2024-04-24 16:04:17 UTC</createdTime>
+<ownerDesignName>Tablas_practica_2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>
